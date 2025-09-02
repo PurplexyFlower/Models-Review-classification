@@ -1,0 +1,21 @@
+🚀 Stella QLoRA Fine-tuning Results (5 Epochs)
+================================================================================
+
+📊 OVERALL PERFORMANCE METRICS:
+   • Accuracy:           0.9802 (98.02%)
+   • F1-Score (Binary):  0.9804 (98.04%)
+   • Precision (Binary): 0.9704 (97.04%)
+   • Recall (Binary):    0.9906 (99.06%)
+   • ROC AUC:            0.9986 (99.86%)
+   • Average Precision:  0.9987 (99.87%)
+
+🔢 CONFUSION MATRIX ANALYSIS:
+   📊 Confusion Matrix:
+      [[3922,  122]  <- [TN, FP]
+       [  38, 4005]] <- [FN, TP]
+
+   📈 Performance Comparison:
+      • Previous best (3 epochs): 97.92%
+      • Current result (5 epochs): 98.04%
+      • Improvement: +0.12%
+      • Status: IMPROVED

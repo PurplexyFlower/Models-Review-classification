@@ -3,11 +3,6 @@ base_model: NovaSearch/stella_en_400M_v5
 library_name: peft
 tags:
 - lora
-- text-classification
-- review-classification
-- qlora
-- stella
-- binary-classification
 language:
 - en
 license: apache-2.0
@@ -21,7 +16,7 @@ license: apache-2.0
 
 ### Model Description
 
-This model uses QLoRA fine-tuning on the Stella-400M base model to classify product reviews as either "Real" or "Fake". The fine-tuning process achieved a best F1 score of **97.92%** on the validation set, demonstrating excellent performance for review authenticity detection.
+This model uses QLoRA fine-tuning on the Stella-400M base model to classify product reviews as either "Real" or "Fake". The fine-tuning process achieved a best F1 score of **98.04%** on the test set after 5 epochs of training, demonstrating exceptional performance for review authenticity detection.
 
 ### Model Details
 
@@ -36,8 +31,10 @@ This model uses QLoRA fine-tuning on the Stella-400M base model to classify prod
 
 ### Performance Metrics
 
-- **Best F1 Score:** 0.9792 (97.92%)
-- **Training completed at:** Epoch 3, Step 5460
+- **🏆 Final F1 Score:** 0.9804 (98.04%)
+- **Previous Best (3 epochs):** 0.9792 (97.92%)
+- **Performance Improvement:** +0.12% (3→5 epochs)
+- **Training completed at:** 5 epochs total
 - **Validation Strategy:** Evaluated every epoch
 - **Best Model Selection:** Based on F1 score
 
@@ -421,4 +418,5 @@ Carbon emissions can be estimated using the [Machine Learning Impact calculator]
 [More Information Needed]
 ### Framework versions
 
+- PEFT 0.17.1
 - PEFT 0.17.0
